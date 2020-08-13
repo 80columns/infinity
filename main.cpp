@@ -1,5 +1,4 @@
 #include <iostream>
-#include "infinite.h"
 
 using namespace std;
 
