@@ -1,4 +1,5 @@
 #include <iostream>
+#include "infinity.h"
 
 using namespace std;
 
@@ -8,18 +9,17 @@ using namespace std;
  */
 
 int main(int argc, char** argv) {
+	// Printing
+	Infinite inf;
+	inf.print();
+
 	// Addition
 	
-	
 	// Subtraction
-	
 
 	// Multiplication
-	
 
 	// Division
-
-
 
 	return 0;
 }
