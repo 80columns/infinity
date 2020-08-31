@@ -1,5 +1,6 @@
-#include <iostream>
 #include "infinity.h"
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
@@ -9,9 +10,18 @@ using namespace std;
  */
 
 int main(int argc, char** argv) {
-	// Printing
-	Infinite inf;
-	inf.print();
+	// Print
+	infinite inf1(39);
+	inf1.print();
+
+	// sleep for 1 second between random number generation
+	this_thread::sleep_for(chrono::seconds(1));
+
+	Infinite inf2(19);
+	inf2.print();
+
+	// Subtract
+	inf1.subtract(inf2);
 
 	// Addition
 	
