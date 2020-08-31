@@ -34,3 +34,6 @@
 *.out
 *.app
 demo
+
+# VSCode configuration
+.vscode

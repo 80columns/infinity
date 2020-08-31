@@ -10,13 +10,13 @@ using namespace std;
 class infinite {
 	public:
 		infinite();
-		infinite(int length);
-		void subtract(infinite inf);
+		infinite(int _length);
+		//infinite(const infinite& _inf);
+		infinite subtract(infinite _inf);
 		void print();
 
-		vector<bool> digits;
-
 	private:
+		vector<bool> digits;
 		bool positive;
 };
 #endif
