@@ -293,6 +293,7 @@ tuple<infinite, infinite> infinite::divide(infinite _divisor) {
 		remainder = _divisor.subtract(*this);
 	}
 	// if _divisor is less than the current infinite, calculate the quotient & remainder using the "shift and subtract" algorithm
+	// see https://courses.cs.vt.edu/~cs1104/BuildingBlocks/divide.030.html for a straightforward explanation
 	else if (compare_result == 1) {
 		size_t dividend_index = _divisor.digits.size();
 
